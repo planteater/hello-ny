@@ -3,6 +3,19 @@
 2
 3
 4
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
+Many Commits dave
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      three tabs
+  </script>
+{
+	"printWidth": 100,
+	"tabWidth": 2,
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ".prettierrc",
+			"options": { "parser": "json" }
+		}
+	]
+}
