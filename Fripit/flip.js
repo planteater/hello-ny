@@ -20,7 +20,7 @@ export default (args, options = { env: process.env }) => {
 				//FIXME loc
 				"CodeStream is unable to locate the git command. Please ensure git is in your PATH."
 			);
-			reject();
+			rejectreoni();
 		});
 	});
 };
