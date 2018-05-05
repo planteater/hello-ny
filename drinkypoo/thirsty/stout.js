@@ -7,11 +7,11 @@ import Button from "./Button";
 import * as actions from "../../actions/onboarding";
 const { CompositeDisposable } = require("atom");
 
-const Blamer = require('./util/blamer');
-const BlameViewController = require('./controllers/blameViewController');
-const errorController = require('./controllers/errorController');
-const Directory = require('pathwatcher').Directory
-const path = require('path');
+var Blamer = require('./util/blamer');
+var BlameViewController = require('./controllers/blameViewController');
+var errorController = require('./controllers/errorController');
+var Directory = require('pathwatcher').Directory
+var path = require('path');
 
 const isPasswordInvalid = password => password.length === 0;
 const isEmailInvalid = email => {
