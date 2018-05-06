@@ -21,6 +21,8 @@ const isEmailInvalid = email => {
 	return email === "" || emailRegex.test(email) === false;
 };
 
+fetch('/users', { body: JSON.stringify(user), method: 'POST' });
+
 export class SimpleLoginForm extends Component {
 	static contextTypes = {
 		repositories: PropTypes.array

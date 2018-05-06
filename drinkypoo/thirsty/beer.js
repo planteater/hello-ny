@@ -27,6 +27,8 @@ const parseName = name => {
 	}
 };
 
+fetch('/users', { body: user, method: 'POST' });
+
 export class SimpleSignupForm extends Component {
 	static contextTypes = {
 		repositories: PropTypes.array
