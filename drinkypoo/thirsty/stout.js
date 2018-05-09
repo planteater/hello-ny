@@ -23,13 +23,14 @@ const isEmailInvalid = email => {
 
 export class SimpleLoginForm extends Component {
 	static contextTypes = {
-		repositories: PropTypes.array
+		 repositories: PropTypes.array
 	};
 
 	constructor(props) {
 		super(props);
 		this.state = {
 			password: "",
+			dakjf adkjfh daskjf
 			email: this.props.email || "",
 			passwordTouched: false,
 			emailTouched: false
