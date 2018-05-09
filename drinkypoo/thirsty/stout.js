@@ -49,6 +49,11 @@ export class SimpleLoginForm extends Component {
 		this.addToolTip("login-input-password", "Your CodeStream password");
 	}
 
+	export class SimpleLoginForm extends Component {
+		static contextTypes = {
+			 repositories: PropTypes.array
+		};
+
 	componentWillUnmount() {
 		this.subscriptions.dispose();
 	}
