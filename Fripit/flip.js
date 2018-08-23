@@ -1,5 +1,13 @@
 import { BufferedProcess } from "atom";
 
+export foo;
+
+export class CodeStreamAgentConnection implements Disposable {
+	private _onDidReceivePubNubMessages = new EventEmitter<{ [key: string]: any }[]>();
+	get onDidReceivePubNubMessages(): Event<{ [key: string]: any }[]> {
+		return this._onDidReceivePubNubMessages.event;
+	}
+
 export default (args, options = { env: process.env }) => {
 	return new Promise((resolve, reject) => {
 		let output = "";
