@@ -8,6 +8,11 @@ export class CodeStreamAgentConnection implements Disposable {
 		return this._onDidReceivePubNubMessages.event;
 	}
 
+	new line 3
+
+	new line 1
+	new line 2
+
 export default (args, options = { env: process.env }) => {
 	return new Promise((resolve, reject) => {
 		let output = "";
