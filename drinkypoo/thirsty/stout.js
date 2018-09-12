@@ -38,6 +38,10 @@ export class SimpleLoginForm extends Component {
 		this.subscriptions = new CompositeDisposable();
 	}
 
+	componentWillUnmount() {
+		this.subscriptions.dispose();
+	}
+
 	componentDidMount() {
 		const { repositories } = this.context;
 		const repository = repositories[0];
