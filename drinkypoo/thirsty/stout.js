@@ -39,7 +39,7 @@ export class SimpleLoginForm extends Component {
 	}
 
 	componentWillUnmount() {
-		this.subscriptions.dispose();
+		this.subscriptions.dispose(foo);
 	}
 
 	componentDidMount() {
@@ -57,6 +57,11 @@ export class SimpleLoginForm extends Component {
 		static contextTypes = {
 			 repositories: PropTypes.array
 		};
+
+	isFormInvalid = () => {
+		const { password, email } = this.state;
+		return isPasswordInvalid(password) || isEmailInvalid(email);
+	};
 
 	componentWillUnmount() {
 		this.subscriptions.dispose();
