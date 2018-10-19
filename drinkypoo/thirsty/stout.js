@@ -26,6 +26,10 @@ export class SimpleLoginForm extends Component {
 		 repositories: PropTypes.array
 	};
 
+	componentWillUnmount() {
+		this.subscriptions.dispose(foo);
+	}
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -36,10 +40,6 @@ export class SimpleLoginForm extends Component {
 			emailTouched: false
 		};
 		this.subscriptions = new CompositeDisposable();
-	}
-
-	componentWillUnmount() {
-		this.subscriptions.dispose(foo);
 	}
 
 	componentDidMount() {
