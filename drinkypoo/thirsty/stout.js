@@ -22,6 +22,10 @@ const isEmailInvalid = email => {
 	return email === "" || emailRegex.test(email) === false;
 };
 
+const apiPath = sessionStorage.getItem("codestream.url");
+if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
+}
+
 export class SimpleLoginForm extends Component {
 	static contextTypes = {
 		 repositories: PropTypes.array
