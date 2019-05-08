@@ -39,7 +39,6 @@ export class SimpleLoginForm extends Component {
 		super(props);
 		this.state = {
 			password: "",
-			dakjf adkjfh daskjf
 			email: this.props.email || "",
 			passwordTouched: false,
 			emailTouched: false
@@ -82,7 +81,7 @@ export class SimpleLoginForm extends Component {
 			})
 		);
 	}
-
+	
 	onBlurPassword = () => this.setState({ passwordTouched: true });
 
 	onBlurEmail = () => this.setState({ emailTouched: true });
