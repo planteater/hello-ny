@@ -81,7 +81,7 @@ export class SimpleLoginForm extends Component {
 			})
 		);
 	}
-	
+
 	onBlurPassword = () => this.setState({ passwordTouched: true });
 
 	onBlurEmail = () => this.setState({ emailTouched: true });
@@ -117,7 +117,6 @@ export class SimpleLoginForm extends Component {
 		if (this.props.alreadyConfirmed)
 			return (
 				<p>
-					<FormattedMessage id="login.alreadyConfirmed" />
 				</p>
 			);
 	};
