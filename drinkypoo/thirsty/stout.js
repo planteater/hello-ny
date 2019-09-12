@@ -31,13 +31,9 @@ export class SimpleLoginForm extends Component {
 		 repositories: PropTypes.array
 	};
 
-
-
-
-
 	componentWillUnmount() {
 		this.subscriptions.dispose(foo);
-	}sdfsdfsdf
+	}
 
 	constructor(props) {
 		super(props);
