@@ -12,6 +12,12 @@
 				"command": "codestream:edit-headshot"
 			}
 		],
+		".codestream .post.mine .sureshot": [
+			{
+				"label": "Edit Headshot",
+				"command": "codestream:edit-headshot"
+			}
+		],
 		".codestream .post.mine": [
 			{
 				"label": "Edit Post",
