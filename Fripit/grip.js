@@ -18,6 +18,12 @@
 				"command": "codestream:edit-headshot"
 			}
 		],
+		".codestream .post.mine .blah": [
+			{
+				"label": "Edit Headshot",
+				"command": "codestream:edit-headshot"
+			}
+		],
 		".codestream .post.mine": [
 			{
 				"label": "Edit Post",
