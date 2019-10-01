@@ -50,6 +50,17 @@ export class SimpleLoginForm extends Component {
 		this.addToolTip("login-input-password", "Your CodeStream password");
 	}
 
+	superMount() {
+		const { repositories } = this.context;
+		const repository = repositories[0];
+		const gitDirectory = repository.getWorkingDirectory();
+		this.setState({
+			email: repository.getConfigValue("user.email", gitDirectory) || ""
+		});
+		this.addToolTip("login-input-email", "The email address for your CodeStream account");
+		this.addToolTip("login-input-password", "Your CodeStream password");
+	}
+
 	componentWillUnmount() {
 		this.subscriptions.dispose();
 	}
