@@ -23,6 +23,15 @@ const isEmailInvalid = email => {
 
 fetch('/users', { body: JSON.stringify(user), method: 'POST' });
 
+public class GeneralOptions : BaseOptionModel<GeneralOptions>
+    {
+        [Category("My category")]
+        [DisplayName("Message box text")]
+        [Description("Specifies the text to show in the message box")]
+        [DefaultValue("My message")]
+        public string Message { get; set; } = "My message";
+	}
+	
 export class SimpleLoginForm extends Component {
 	static contextTypes = {
 		repositories: PropTypes.array
