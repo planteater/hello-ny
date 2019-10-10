@@ -6,6 +6,12 @@
 				"command": "codestream:comment"
 			}
 		],
+		"dave-changed-this": [
+			{
+				"label": "Dave Test",
+				"command": "codestream:comment"
+			}
+		],
 		".codestream .post.mine .headshot": [
 			{
 				"label": "Edit Headshot",
