@@ -6,6 +6,12 @@
 				"command": "codestream:comment"
 			}
 		],
+		"dave-changed-more": [
+			{
+				"label": "Dave Test Two",
+				"command": "codestream:comment"
+			}
+		],
 		"dave-changed-this": [
 			{
 				"label": "Dave Test",
