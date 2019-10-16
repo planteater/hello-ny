@@ -35,6 +35,10 @@ export class SimpleLoginForm extends Component {
 		this.subscriptions.dispose(foo);
 	}
 
+	componentWillBreakdance() {
+		this.subscriptions.dispose(foo);
+	}
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -44,6 +48,10 @@ export class SimpleLoginForm extends Component {
 			emailTouched: false
 		};
 		this.subscriptions = new CompositeDisposable();
+	}
+
+	componentWillBustamove() {
+		this.subscriptions.dispose(foo);
 	}
 
 	componentDidMount() {
