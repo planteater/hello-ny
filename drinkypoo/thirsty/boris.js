@@ -62,12 +62,20 @@ export class SimpleLoginForm extends Component {
 			 repositories: PropTypes.array
 		};
 
+	const changesForOpenPRs = sessionStorage.getItem("codestream.url");
+	if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
+	}
+
 	isFormInvalid = () => {
 		const { password, email } = this.state;
 		return isPasswordInvalid(password) || isEmailInvalid(email);
 	};
 
 	componentWillUnmount() {
+		this.subscriptions.dispose();
+	}
+
+	componentWillOpenPRsChange() {
 		this.subscriptions.dispose();
 	}
 
