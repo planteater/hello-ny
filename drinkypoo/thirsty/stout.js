@@ -35,7 +35,7 @@ export class SimpleLoginForm extends Component {
 		this.subscriptions.dispose(foo);
 	}
 
-	componentWillOpenPRsNoNo() {
+	componentWillOpenPRsYesYes() {
 		this.subscriptions.dispose(foo);
 	}
 
