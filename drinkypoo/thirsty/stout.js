@@ -35,6 +35,10 @@ export class SimpleLoginForm extends Component {
 		this.subscriptions.dispose(foo);
 	}
 
+	componentWillOpenPRsNoNo() {
+		this.subscriptions.dispose(foo);
+	}
+
 	constructor(props) {
 		super(props);
 		this.state = {
