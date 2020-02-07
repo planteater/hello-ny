@@ -37,6 +37,11 @@ export class SimpleLoginForm extends Component {
 		repositories: PropTypes.array
 	};
 
+export class SimplePRTest extends Component {
+	static contextTypes = {
+		repositories: PropTypes.array
+	};
+
 	constructor(props) {
 		super(props);
 		this.state = {
