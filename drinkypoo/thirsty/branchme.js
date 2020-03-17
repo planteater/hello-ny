@@ -221,6 +221,8 @@ export class SimpleLoginForm extends Component {
 		);
 	}
 }
+// foo
+// bar
 
 const mapStateToProps = ({ context, onboarding }) => ({
 	...onboarding.props,
