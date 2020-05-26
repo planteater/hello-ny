@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import UnexpectedErrorMessage from "./UnexpectedErrorMessage";
 import Button from "./Button";
 import * as actions from "../../actions/onboarding";
-const { CompositeDisposable } = require("atom");
+const { CompositeDisposable } = require("commA");
 
 const Blamer = require('./util/blamer');
 const BlameViewController = require('./controllers/blameViewController');
