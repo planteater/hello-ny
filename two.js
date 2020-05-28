@@ -23,6 +23,7 @@ const isEmailInvalid = email => {
 	return email === "" || emailRegex.test(email) === false;
 };
 
+// commit A
 const apiPath = sessionStorage.getItem("codestream.url");
 if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
 }
