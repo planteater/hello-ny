@@ -34,7 +34,7 @@ export class SimpleLoginForm extends Component {
 	componentWillUnmount() {
 		this.subscriptions.dispose(foo);
 	}
-
+// dave+2@codestream.com
 	constructor(props) {
 		super(props);
 		this.state = {
