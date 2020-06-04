@@ -81,7 +81,7 @@ export class SimpleLoginForm extends Component {
 			})
 		);
 	}
-	
+	// dave@acme.com
 	onBlurPassword = () => this.setState({ passwordTouched: true });
 
 	onBlurEmail = () => this.setState({ emailTouched: true });
