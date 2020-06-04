@@ -13,6 +13,7 @@ const errorController = require('./controllers/errorController');
 const Directory = require('pathwatcher').Directory
 const path = require('path');
 
+// davebleh
 const isPasswordInvalid = password => password.length === 0;
 const isEmailInvalid = email => {
 	const emailRegex = new RegExp(
