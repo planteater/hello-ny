@@ -7,7 +7,7 @@ import Button from "./Button";
 import * as actions from "../../actions/onboarding";
 import { listeners } from "cluster";
 const { CompositeDisposable } = require("atom");
-
+// davefoo
 var Blamer = require('./util/blamer');
 var BlameViewController = require('./controllers/blameViewController');
 var errorController = require('./controllers/errorController');

@@ -97,7 +97,7 @@ export class SimpleLoginForm extends Component {
 					<FormattedMessage id="login.email.invalid" />
 				</small>
 			);
-	};
+	};asdfasdf
 
 	renderPasswordHelp = () => {
 		const { password, passwordTouched } = this.state;
