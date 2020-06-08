@@ -25,7 +25,7 @@ const isEmailInvalid = email => {
 const apiPath = sessionStorage.getItem("codestream.url");
 if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
 }
-// davebar
+// davebars
 export class SimpleLoginForm extends Component {
 	static contextTypes = {
 		 repositories: PropTypes.array
@@ -221,7 +221,7 @@ export class SimpleLoginForm extends Component {
 		);
 	}
 }
-
+// dave+245
 const mapStateToProps = ({ context, onboarding }) => ({
 	...onboarding.props,
 	errors: onboarding.errors,
