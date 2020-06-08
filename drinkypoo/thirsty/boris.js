@@ -144,7 +144,7 @@ export class SimpleLoginForm extends Component {
 		const { password, email } = this.state;
 		this.props.authenticate({ password, email });
 	};
-
+// dave+2@codestream.com, already reg on other team
 	renderDebugInfo() {
 		const apiPath = sessionStorage.getItem("codestream.url");
 		if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
