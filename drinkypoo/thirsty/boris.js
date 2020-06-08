@@ -137,7 +137,7 @@ export class SimpleLoginForm extends Component {
 		const { password, email } = this.state;
 		return isPasswordInvalid(password) || isEmailInvalid(email);
 	};
-
+// dave+243@codestream.com, regular invitee
 	submitCredentials = async event => {
 		event.preventDefault();
 		if (this.isFormInvalid()) return;
