@@ -150,7 +150,7 @@ export class SimpleLoginForm extends Component {
 		if (atom.inDevMode() && apiPath) return <p>{apiPath}</p>;
 	}
 
-	render() {
+	render() {//dave+244@codestream.com
 		return (
 			<form id="login-form" onSubmit={this.submitCredentials}>
 				{this.renderDebugInfo()}
