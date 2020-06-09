@@ -226,5 +226,5 @@ const mapStateToProps = ({ context, onboarding }) => ({
 	...onboarding.props,
 	errors: onboarding.errors,
 	loading: onboarding.requestInProcess
-});
+}); // dave+242
 export default connect(mapStateToProps, actions)(SimpleLoginForm);
