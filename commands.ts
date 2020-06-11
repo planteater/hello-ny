@@ -10,6 +10,7 @@ import { Container } from "./container";
 import { Logger } from "./logger";
 import { Command, createCommandDecorator, Strings } from "./system";
 
+// dave+foo1
 const commandRegistry: Command[] = [];
 const command = createCommandDecorator(commandRegistry);
 
