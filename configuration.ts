@@ -1,6 +1,6 @@
 "use strict";
 export * from "./config";
-
+// local
 import {
 	ConfigurationChangeEvent,
 	ConfigurationTarget,
