@@ -8,6 +8,7 @@ export enum ContextKeys {
 	Status = "codestream:status"
 }
 
+// saved
 export function setContext(key: ContextKeys | string, value: any) {
 	return commands.executeCommand(BuiltInCommands.SetContext, key, value);
 }
