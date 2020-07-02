@@ -18,6 +18,7 @@ import { SelectionDecorationProvider } from "./providers/selectionDecorationProv
 import { SetServerUrlRequestType} from "./protocols/agent/agent.protocol";
 // import { WebviewSidebarActivator } from "./views/webviewSidebarActivator";
 
+// test fun
 export class Container {
 	static async initialize(
 		context: ExtensionContext,
@@ -33,7 +34,7 @@ export class Container {
 		this._agent = new CodeStreamAgentConnection(context, agentOptions);
 
 		context.subscriptions.push((this._session = new CodeStreamSession(config.serverUrl)));
-
+// dave+sg1@codestream.com
 		context.subscriptions.push((this._notifications = new NotificationsController()));
 		context.subscriptions.push((this._vsls = new LiveShareController()));
 
