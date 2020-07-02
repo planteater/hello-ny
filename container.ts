@@ -37,7 +37,7 @@ export class Container {
 // dave+sg1@codestream.com
 		context.subscriptions.push((this._notifications = new NotificationsController()));
 		context.subscriptions.push((this._vsls = new LiveShareController()));
-
+// dave+sg2@codestream.com
 		context.subscriptions.push((this._commands = new Commands()));
 		context.subscriptions.push((this._codeActions = new CodeStreamCodeActionProvider()));
 		context.subscriptions.push((this._codeLens = new CodemarkCodeLensProvider()));
