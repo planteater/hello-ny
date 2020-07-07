@@ -119,6 +119,11 @@ function onSessionStatusChanged(e: SessionStatusChangedEvent) {
 	setContext(ContextKeys.Status, status);
 }
 
+function onSessionStatusModifed(e: SessionStatusChangedEvent) {
+	const status = e.getStatus();
+	setContext(ContextKeys.Status, status);
+}
+
 let _gitPath: string | undefined;
 export async function gitPath(): Promise<string> {
 	if (_gitPath === undefined) {
