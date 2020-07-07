@@ -28,6 +28,7 @@ interface BuildInfoMetadata {
 	assetEnvironment: string;
 }
 
+// foo here
 export async function activate(context: ExtensionContext) {
 	const start = process.hrtime();
 
