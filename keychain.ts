@@ -11,6 +11,6 @@ function getNodeModule<T>(moduleName: string): T | undefined {
 		return vscodeRequire(moduleName);
 	} catch (ex) {}
 	return undefined;
-}
+} 
 
 export const keychain = getNodeModule<typeof keytarType>("keytar");
