@@ -1,10 +1,7 @@
 # hello-ny
-11
-2
-3
-4
-Many Commits dave dave1 dave2 dave3 dave4
-This change from dave3
+
+// This is a change by dave+loophole@codestream.com
+
   <script>
     document.getElementById("demo").innerHTML = "Hello JavaScript!";
       three tabs
