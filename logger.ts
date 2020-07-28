@@ -2,7 +2,7 @@
 import { ExtensionContext, OutputChannel, Uri, window } from "vscode";
 import { extensionOutputChannelName } from "./constants";
 import { getCorrelationContext } from "./system";
-// import { Telemetry } from './telemetry';
+// import { Telemetry } from './telemetry';p
 
 export enum TraceLevel {
 	Silent = "silent",

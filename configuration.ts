@@ -20,6 +20,7 @@ const emptyConfig: any = new Proxy<any>({} as Config, {
 	}
 });
 
+// make that change
 export interface ConfigurationWillChangeEvent {
 	change: ConfigurationChangeEvent;
 	transform?(e: ConfigurationChangeEvent): ConfigurationChangeEvent;

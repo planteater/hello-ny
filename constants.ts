@@ -4,6 +4,7 @@ export const extensionId = "codestream";
 export const extensionOutputChannelName = "CodeStream";
 export const extensionQualifiedId = `CodeStream.${extensionId}`;
 
+// yup
 export enum BuiltInCommands {
 	CloseActiveEditor = "workbench.action.closeActiveEditor",
 	CloseAllEditors = "workbench.action.closeAllEditors",

@@ -11,7 +11,7 @@ export * from "./system/searchTree";
 export * from "./system/string";
 export * from "./system/version";
 
-// Must keep this at the end, since they uses Functions
+// Must keep this at the end, since they uses functions
 export * from "./system/decorators/command";
 export * from "./system/decorators/gate";
 export * from "./system/decorators/log";
