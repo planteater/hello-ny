@@ -46,7 +46,7 @@ export class Container {
 		context.subscriptions.push(new CodemarkPatchContentProvider());
 		context.subscriptions.push((this._selectionDecoration = new SelectionDecorationProvider()));
 		context.subscriptions.push((this._statusBar = new StatusBarController()));
-
+// local 2
 		context.subscriptions.push((this._webview = new WebviewController(this._session)));
 		// context.subscriptions.push(new WebviewSidebarActivator());
 
