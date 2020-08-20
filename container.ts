@@ -20,7 +20,7 @@ import { SetServerUrlRequestType} from "./protocols/agent/agent.protocol";
 
 // test fun
 export class Container {
-	static async initialize(
+	static async initialization(
 		context: ExtensionContext,
 		config: Config,
 		agentOptions: BaseAgentOptions
