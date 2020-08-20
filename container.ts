@@ -32,7 +32,7 @@ export class Container {
 		this._versionBuild = agentOptions.extension.build;
 		this._versionFormatted = agentOptions.extension.versionFormatted;
 		this._agent = new CodeStreamAgentConnection(context, agentOptions);
-
+// local 1
 		context.subscriptions.push((this._session = new CodeStreamSession(config.serverUrl)));
 // dave+sg1@codestream.com
 		context.subscriptions.push((this._notifications = new NotificationsController()));
