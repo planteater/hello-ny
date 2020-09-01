@@ -18,6 +18,9 @@ export class NotificationsController implements Disposable {
 		this._disposable && this._disposable.dispose();
 	}
 
+	// Uncomm #2
+	// 2.1
+	// 2.2
 	private async onSessionPostsReceived(e: PostsChangedEvent) {
 		const { user } = Container.session;
 		const { activeStreamThread: activeStream, visible: streamVisible } = Container.webview;

@@ -15,6 +15,12 @@ import {
 import { configuration } from "../configuration";
 import { Container } from "../container";
 
+// Uncomm #3
+// 3.1
+// 3.2
+// 3.3
+// 3.4
+// 3.5
 export class StatusBarController implements Disposable {
 	private readonly _disposable: Disposable;
 	private _enabledDisposable: Disposable | undefined;
@@ -149,7 +155,6 @@ export class StatusBarController implements Disposable {
 				break;
 		}
 
-		this._statusBarItem.show();
 
 		return this._statusBarItem;
 	}
