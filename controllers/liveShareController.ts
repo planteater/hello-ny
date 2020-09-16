@@ -15,6 +15,13 @@ import { Container } from "../container";
 import { Logger } from "../logger";
 import { Dates } from "../system";
 
+export interface VslsStartServiceRequestAction {
+	type: "begin";
+	streamId: string;
+	threadId?: string;
+	createNewStream?: Boolean;
+}
+
 export interface VslsInviteServiceRequestAction {
 	type: "invite";
 	userId: string;

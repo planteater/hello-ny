@@ -22,6 +22,15 @@ export class NotificationsController implements Disposable {
 		const { user } = Container.session;
 		const { activeStreamThread: activeStream, visible: streamVisible } = Container.webview;
 
+		const isPostStreamVisible =
+		streamVisible && !(activeStream === undefined || activeStream.streamId !== post.streamId);
+
+		const followerIds = codemark ? codemark.followerIds : review!.followerIds;
+		const isUserFollowing = (followerIds || []).includes(user.id);
+		if (isUserFollowing && (!isPostStreamVisible || mentioned)) {
+			this.showNotification(post, codemark, review, mentioned);
+		}
+
 		if (!user.wantsToastNotifications()) return;
 
 		for (const post of e.items()) {
