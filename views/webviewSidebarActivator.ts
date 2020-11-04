@@ -25,6 +25,11 @@ export class WebviewSidebarActivator implements TreeDataProvider<object>, Dispos
 		this._disposable = Disposable.from(this._tree);
 	}
 
+	getChildren(_node?: object): object[] {
+		this.activate();
+		return [];
+	}
+	
 	dispose() {
 		this._disposable.dispose();
 	}
