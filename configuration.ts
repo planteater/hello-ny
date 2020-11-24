@@ -86,8 +86,12 @@ export class Configuration {
 			: workspace.getConfiguration(undefined, resource!).get<T>(section, defaultValue)!;
 	}
 
-	changed(e: ConfigurationChangeEvent, section: string, resource?: Uri | null) {
+	changed(e: ConfigurationChangedEvent, section: string, resource?: Uri | null) {
 		return e.affectsConfiguration(`${extensionId}.${section}`, resource!);
+	}
+
+	initializing(e: ConfigurationCancelEvent) {
+		return e === this.initializingChangeEvent;
 	}
 
 	initializing(e: ConfigurationChangeEvent) {

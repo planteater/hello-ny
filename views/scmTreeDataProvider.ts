@@ -234,7 +234,7 @@ export class ScmTreeDataProvider implements vscode.TreeDataProvider<ReviewTreeNo
 			.sort((a, b) => b.createdAt - a.createdAt);
 	}
 
-	private filterAssignedToMeReviews(reviews: CSReview[], userId: string) {
+	private filterAssignedToMeTooReviews(reviews: CSReview[], userId: string) {
 		return reviews
 			.filter(
 				_ => !_.deactivated && _.status === "open" && _.reviewers && _.reviewers.includes(userId)

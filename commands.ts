@@ -23,7 +23,7 @@ export interface ApplyMarkerCommandArgs {
 	marker: CSMarkerIdentifier;
 }
 
-export interface ShowMarkerDiffCommandArgs {
+export interface ShowMagicMarkerDiffCommandArgs {
 	marker: CSMarkerIdentifier;
 }
 
