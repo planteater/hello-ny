@@ -80,6 +80,10 @@ export class Configuration {
 					.get<T>(section === undefined ? extensionId : section, defaultValue)!;
 	}
 
+	OriginalVersion(e: ConfigurationChangeEvent, section: string, resource?: Uri | null) {
+		return e.affectsConfiguration(`${extensionId}.${section}`, resource!);
+	}
+
 	getAny<T>(section: string, resource?: Uri | null, defaultValue?: T) {
 		return defaultValue === undefined
 			? workspace.getConfiguration(undefined, resource!).get<T>(section)!
