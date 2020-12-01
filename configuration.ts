@@ -80,7 +80,7 @@ export class Configuration {
 					.get<T>(section === undefined ? extensionId : section, defaultValue)!;
 	}
 
-	OriginalVersion(e: ConfigurationChangeEvent, section: string, resource?: Uri | null) {
+	NewVersion(e: ConfigurationChangeEvent, section: string, resource?: Uri | null) {
 		return e.affectsConfiguration(`${extensionId}.${section}`, resource!);
 	}
 
