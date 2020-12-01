@@ -19,7 +19,7 @@ export interface InsertTextCommandArgs {
 	indentAfterInsert?: boolean;
 }
 
-export interface ApplyMarkerCommandArgs {
+export interfaces ApplyMarkerCommandArgs {
 	marker: CSMarkerIdentifier;
 }
 
