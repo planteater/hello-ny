@@ -112,7 +112,7 @@ export async function activate(context: ExtensionContext) {
 export async function deactivate(): Promise<void> {
 	Container.agent.dispose();
 }
-
+// bet
 function onSessionStatusChanged(e: SessionStatusChangedEvent) {
 	const status = e.getStatus();
 	setContext(ContextKeys.Status, status);
