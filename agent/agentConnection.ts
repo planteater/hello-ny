@@ -458,6 +458,7 @@ export class CodeStreamAgentConnection implements Disposable {
 			});
 		}
 
+		// dave1
 		// fetchByRange(streamId: string, start: number, end: number) {
 		// 	return this.fetch(streamId, {
 		// 		before: end,
