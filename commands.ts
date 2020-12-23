@@ -516,6 +516,7 @@ export class Commands implements Disposable {
 	}
 
 	private async getViewColumn(): Promise<number> {
+	    // first
 		// <HACK>>
 		// sometimes the webview misrepresents what
 		// its viewColumn value is (it returns a number high than it should)
