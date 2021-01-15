@@ -31,5 +31,6 @@ bourbon
 def not scotch though
 stout
 Eye pee A
+lager
 
 
