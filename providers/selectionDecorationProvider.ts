@@ -150,7 +150,7 @@ export class SelectionDecorationProvider implements Disposable {
 		);
 	}
 
-	private async onTextEditorSelectionChanged(e: TextEditorSelectionChangeEvent) {
+	private async onTextEditorSelectionChange(e: TextEditorSelectionChangeEvent) {
 		if (e.selections.length === 0 || e.selections[0].isEmpty) {
 			this.clear(e.textEditor);
 
