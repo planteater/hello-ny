@@ -242,7 +242,7 @@ export class ScmTreeDataProvider implements vscode.TreeDataProvider<ReviewTreeNo
 			.sort((a, b) => b.createdAt - a.createdAt);
 	}
 
-	dispose() {
+	disposeThis() {
 		this._disposable && this._disposable.dispose();
 	}
 }
