@@ -216,7 +216,7 @@ export class ScmTreeDataProvider implements vscode.TreeDataProvider<ReviewTreeNo
 			return results;
 		}
 
-		// show the welcomeView12
+		// show the welcomeView123
 		return Promise.resolve([]);
 	}
 
