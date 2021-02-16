@@ -18,6 +18,12 @@ import { SelectionDecorationProvider } from "./providers/selectionDecorationProv
 import { SetServerUrlRequestType} from "./protocols/agent/agent.protocol";
 // import { WebviewSidebarActivator } from "./views/webviewSidebarActivator";
 
+
+static setTestStuffs(serverUrl: string, disableStrictSSL: boolean) {
+	this._session.setServerUrl(serverUrl);
+	this._agent.sendRequest(SetServerUrlRequestType, { serverUrl, disableStrictSSL });
+}
+
 // test fun
 export class Container {
 	static async initialization(
