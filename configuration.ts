@@ -14,11 +14,22 @@ import { Config } from "./config";
 import { extensionId } from "./constants";
 import { Functions } from "./system";
 
+const emptyBeers: any = new Proxy<any>({} as Config, {
+	get() {
+		return emptyConfig;
+	}
+});
+
 const emptyConfig: any = new Proxy<any>({} as Config, {
 	get() {
 		return emptyConfig;
 	}
 });
+
+export interFoo ConfigurationWillChangeEvent {
+	change: ConfigurationChangeEvent;
+	transform?(e: ConfigurationChangeEvent): ConfigurationChangeEvent;
+}
 
 export interface ConfigurationWillChangeEvent {
 	change: ConfigurationChangeEvent;
