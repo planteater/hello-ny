@@ -16,7 +16,7 @@ export enum GlobalState {
 	AccessTokens = "codestream:accessTokens",
 	Version = "codestream:version"
 }
-
+// 1
 export enum WorkspaceState {
 	webviewState = "codestream:webviewState",
 	TeamId = "codestream:teamId"
