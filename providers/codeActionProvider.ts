@@ -21,6 +21,22 @@ export class CodeStreamCodeActionProvider implements CodeActionProvider, Disposa
 		{ scheme: "vsls" }
 	];
 
+	private async onSessionStarted(e: SessionStatusChangedEvent) {
+		const status = e.getStatus();
+		switch (status) {
+			case SessionStatus.SignedOut:
+				this._disposableSignedIn && this._disposableSignedIn.dispose();
+				break;
+
+			case SessionStatus.SignedIn:
+				this._disposableSignedIn = languages.registerCodeActionsProvider(
+					CodeStreamCodeActionProvider.selector,
+					this
+				);
+				break;
+		}
+	}
+
 	private readonly _disposable: Disposable;
 	private _disposableSignedIn: Disposable | undefined;
 
