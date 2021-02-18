@@ -10,6 +10,7 @@ import { Uri } from "vscode";
 import { memoize } from "../system";
 import { CodeStreamSession, Post, SessionSignedOutReason, SessionStatus } from "./session";
 
+// upadating some codz
 export interface SessionStatusChangedEvent {
 	getStatus(): SessionStatus;
 	session: CodeStreamSession;
