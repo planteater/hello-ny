@@ -443,6 +443,13 @@ export class CodeStreamAgentConnection implements Disposable {
 			});
 		}
 
+		fetchMyBeer(streamId: string, parentPostId: string) {
+			return this._connection.sendRequest(FetchPostRepliesRequestType, {
+				streamId: streamId,
+				postId: parentPostId
+			});
+		}
+
 		fetch(
 			streamId: string,
 			options: {
