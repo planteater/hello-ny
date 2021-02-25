@@ -1,5 +1,5 @@
 "use strict";
-export * from "./config";
+export * from "./config"; // test
 
 import {
 	ConfigurationChangeEvent,
