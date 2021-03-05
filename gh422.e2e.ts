@@ -19,7 +19,7 @@ export function toLoggableIpcMessage(msg: WebviewIpcMessage) {
 	if (isIpcResponseMessage(msg)) return `response(${msg.id})`;
 
 	return msg.method;
-}
+} // all the changes
 
 export interface WebviewLike {
 	notify<NT extends NotificationType<any, any>>(type: NT, params: NotificationParamsOf<NT>): void;
