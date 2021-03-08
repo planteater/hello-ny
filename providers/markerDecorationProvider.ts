@@ -93,6 +93,18 @@ export class CodemarkDecorationProvider implements HoverProvider, Disposable {
 
 	private _suspended = false;
 
+	private onSessionStatusChanged(e: SessionStatusChangedEvent) {
+		switch (e.getStatus()) {
+			case SessionStatus.SignedOut:
+				this.disable();
+				break;
+
+			case SessionStatus.SignedIn:
+				this.ensure();
+				break;
+		}
+	}
+	
 	constructor() {
 		this._disposable = Disposable.from(
 			configuration.onDidChange(this.onConfigurationChanged, this),
