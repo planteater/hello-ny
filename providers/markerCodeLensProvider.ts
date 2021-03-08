@@ -24,7 +24,7 @@ import { Container } from "../container";
 import { Logger } from "../logger";
 import { Strings } from "../system";
 // change from dave+222, and now for branch test
-// moar testing 
+// moar testing take 2
 export class CodemarkCodeLensProvider implements CodeLensProvider, Disposable {
 	static selector: DocumentSelector = { scheme: "file" };
 
