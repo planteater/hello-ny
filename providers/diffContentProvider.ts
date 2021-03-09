@@ -15,6 +15,7 @@ import { Logger } from "../logger";
 
 // another pre-team change from dave221
 // and again
+// no toast for this
 interface CacheValue {
 	/**
 	 * These come from the initial command to generate the cached content.
