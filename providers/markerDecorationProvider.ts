@@ -31,6 +31,7 @@ import { Container } from "../container";
 import { Logger } from "../logger";
 import { Functions, Strings } from "../system";
 // branch test from d222, and now the real branch test, and more
+// Num 1 - 222
 const emptyArray = (Object.freeze([]) as any) as any[];
 
 const positionStyleMap: { [key: string]: string } = {
@@ -104,7 +105,7 @@ export class CodemarkDecorationProvider implements HoverProvider, Disposable {
 				break;
 		}
 	}
-	
+
 	constructor() {
 		this._disposable = Disposable.from(
 			configuration.onDidChange(this.onConfigurationChanged, this),
