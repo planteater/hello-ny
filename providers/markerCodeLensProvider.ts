@@ -27,6 +27,7 @@ import { Strings } from "../system";
 // moar testing take 2, and change some more and more foo
 // Num 2 - 223
 // Four score!
+// Five Alive
 export class CodemarkCodeLensProvider implements CodeLensProvider, Disposable {
 	static selector: DocumentSelector = { scheme: "file" };
 
