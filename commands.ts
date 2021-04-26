@@ -10,7 +10,7 @@ import { Container } from "./container";
 import { Logger } from "./logger";
 import { Command, createCommandDecorator, Strings } from "./system";
 
-// test for invite 257
+// test for invite 257 - take 2
 const commandRegistry: Command[] = [];
 const command = createCommandDecorator(commandRegistry);
 
