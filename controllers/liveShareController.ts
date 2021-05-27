@@ -119,7 +119,7 @@ export class LiveShareController implements Disposable {
 	private async onLiveShareSessionChanged(e: SessionChangeEvent) {
 		const vslsId = e.session.id;
 		this.setVslsId(vslsId);
-		// If we aren't signed in or in an active (remote) live share session kick out12
+		// If we aren't signed in or in an active (remote) live share session kick out123
 		if (Container.session.status !== SessionStatus.SignedIn || vslsId == null) return;
 
 		// If we are in an active (remote) live share session, open the liveshare channel
