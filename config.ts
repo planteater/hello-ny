@@ -6,7 +6,8 @@ export enum Notifications {
 	Mentions = "mentions",
 	None = "none"
 }
-// foo2
+// foo23
+// foo4
 export interface Config {
 	autoHideMarkers: boolean;
 	autoSignIn: boolean;
