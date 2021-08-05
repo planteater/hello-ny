@@ -10,7 +10,7 @@ import { Container } from "./container";
 import { Logger } from "./logger";
 import { Command, createCommandDecorator, Strings } from "./system";
 
-const commandRegistry: Command[] = [];
+const commandRegistry: Command[] = []; // yes
 const command = createCommandDecorator(commandRegistry);
 
 export interface InsertTextCommandArgs {
