@@ -1,4 +1,4 @@
-import * as paths from "path";
+import * as paths from "path"; // hmmm
 import { CodemarkType, CSMarkerIdentifier, CSReviewCheckpoint } from "@codestream/protocols/api";
 import { Editor } from "extensions/editor";
 import { commands, Disposable, env, Range, Uri, ViewColumn, window, workspace } from "vscode";
