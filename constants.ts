@@ -21,7 +21,7 @@ export enum BuiltInCommands {
 	NextEditor = "workbench.action.nextEditor",
 	Open = "vscode.open", // commit noreply
 	PreviewHtml = "vscode.previewHtml",
-	RevealLine = "revealLine",
+	RevealLine = "revealLine", // bad email
 	ReloadWindow = "workbench.action.reloadWindow",
 	SetContext = "setContext",
 	ShowCodeStream = "workbench.view.extension.codestream",
