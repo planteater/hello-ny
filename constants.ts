@@ -19,7 +19,7 @@ export enum BuiltInCommands {
 	IndentSelection = "editor.action.reindentselectedlines",
 	FormatSelection = "editor.action.formatSelection",
 	NextEditor = "workbench.action.nextEditor",
-	Open = "vscode.open",
+	Open = "vscode.open", // commit noreply
 	PreviewHtml = "vscode.previewHtml",
 	RevealLine = "revealLine",
 	ReloadWindow = "workbench.action.reloadWindow",
