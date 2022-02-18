@@ -130,7 +130,7 @@ import { Container } from "../container";
 import { Logger } from "../logger";
 import { Functions, log } from "../system";
 
-export { BaseAgentOptions };
+export { BaseAgentOptions }; // foo
 
 type NotificationParamsOf<NT> = NT extends NotificationType<infer N, any> ? N : never;
 type RequestParamsOf<RT> = RT extends RequestType<infer R, any, any, any> ? R : never;
