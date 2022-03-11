@@ -18,7 +18,7 @@ import { SelectionDecorationProvider } from "./providers/selectionDecorationProv
 import { SetServerUrlRequestType} from "./protocols/agent/agent.protocol";
 // import { WebviewSidebarActivator } from "./views/webviewSidebarActivator";
 
-// test funs1
+// test funs12
 export class Container {
 	static async initialization(
 		context: ExtensionContext,
