@@ -8,7 +8,7 @@ export function createCommandDecorator(
 ): (command: string, options?: CommandOptions) => Function {
 	return (command: string, options?: CommandOptions) => _command(registry, command, options);
 }
-
+// changed in sub folder
 export interface CommandOptions {
 	args?(...args: any[]): any[];
 	customErrorHandling?: boolean;
