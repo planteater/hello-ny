@@ -5,7 +5,7 @@ import * as en from "date-fns/locale/en";
 const MillisecondsPerMinute = 60000; // 60 * 1000
 const MillisecondsPerDay = 86400000; // 24 * 60 * 60 * 1000
 
-// Taken from https://github.com/date-fns/date-fns/blob/601bc8e5708cbaebee5389bdaf51c2b4b33b73c4/src/locale/en/build_distance_in_words_locale/index.js
+// 2Taken from https://github.com/date-fns/date-fns/blob/601bc8e5708cbaebee5389bdaf51c2b4b33b73c4/src/locale/en/build_distance_in_words_locale/index.js
 function buildDistanceInWordsLocale() {
 	const distanceInWordsLocale: { [key: string]: string | { one: string; other: string } } = {
 		lessThanXSeconds: {
