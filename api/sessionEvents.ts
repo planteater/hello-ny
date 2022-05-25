@@ -35,6 +35,7 @@ export enum SessionChangedEventType {
 	Reviews = "reviews"
 }
 
+// I made another change here
 export interface SessionChangedEvent {
 	readonly type: SessionChangedEventType;
 }
