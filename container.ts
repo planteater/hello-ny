@@ -141,6 +141,8 @@ export class Container {
 		return this._versionBuild;
 	}
 
+	// another late change
+	// to test with
 	private static _versionFormatted: string;
 	static get versionFormatted(): string {
 		return this._versionFormatted;
