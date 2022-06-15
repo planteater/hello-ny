@@ -5,8 +5,6 @@ export * from "./system/crypto";
 export * from "./system/date";
 export * from "./system/fs";
 export * from "./system/function";
-export * from "./system/iterable";
-export * from "./system/object";
 export * from "./system/searchTree";
 export * from "./system/string";
 export * from "./system/version";
