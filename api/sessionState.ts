@@ -5,7 +5,7 @@ import { Team } from "./models/team";
 import { User } from "./models/user";
 import { CodeStreamSession } from "./session";
 
-export class SessionState {
+export class SessionState { //change 1
 	constructor(
 		private readonly _session: CodeStreamSession,
 		public readonly teamId: string,

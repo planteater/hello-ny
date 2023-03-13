@@ -14,7 +14,7 @@ export class NotificationsController implements Disposable {
 		);
 	}
 
-	dispose() {
+	dispose() { // change 2
 		this._disposable && this._disposable.dispose();
 	}
 
