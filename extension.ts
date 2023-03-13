@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; // change via GH
 import { ProtocolHandler } from "protocolHandler";
 import {
 	env,
